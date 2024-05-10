@@ -48,6 +48,6 @@ else if ($años < '18'){
 
 
 
-echo 'EEEEEEEEEEEEEE'
+echo 'OOOOOOOOOOOOOOOO'
 
 ?>
