@@ -1,5 +1,6 @@
 <?php
 
+
 $caja = '20';
 
 if ($caja <= 12){
@@ -10,6 +11,8 @@ else if($caja > 12){
     echo 'LA CAJA ES LENTA';
 } 
 
+
+echo "<br> <br>";
 
 
 $edad = '10';
@@ -23,31 +26,72 @@ else if($edad < 18){
 }
 
 
+echo "<br> <br>";
 
 
-$nombre = 'carlos, mario';
+$nombre = 'Mario';
 
-if ($nombre == 'Carlos, Mario'){
-    echo 'el usuario puede entrar al vip' ;
+if ($nombre == 'Mario'){
+    echo 'puedes entrar al area VIP' ;
 }
 
 else if ($nombre <> 'Carlos, Mario'){
-    echo 'el usuario no puede entrar al vip' ;
+    echo 'no puedes entrar al area VIP' ;
 }
 
-$años = '18';
+$años = '17';
 
 if ($años >= '18'){
-    echo 'el  usuario puede ingresar';
+    echo ' pero puedes ingresar al area publica';
 }
 
 else if ($años < '18'){
-    echo 'el usuario no puede ingresar';
+    echo ' no puedes ingresar';
 }
 
 
+echo "<br> <br>";
 
 
-echo 'OOOOOOOOOOOOOOOO'
+$estatura = '169';
+$velocidad = '26';
+$años_de_vida = '18';
 
+if ($estatura >= 170 and $velocidad >= 27){
+    echo 'Felicidades, entraste al equipo';
+}
+
+else if ($estatura < 170 and $velocidad < 27){
+    echo 'no entraste al equipo';
+}
+
+
+echo "<br> <br>";
+
+
+$aire = 'amarillo';
+
+switch($aire){
+    case 'verde';
+        echo 'calidad del aire es buena';
+    break;
+    case 'amarillo';
+        echo 'calidad del aire es moderada';
+    break;
+    case 'naranja';
+        echo 'no es saludable para grupos sensibles';
+    break;
+    case 'rojo';
+        echo 'calidad de aire no es saludable';
+    break;
+    case 'purpura';
+        echo 'es muy poco sensible';
+    break;
+    case 'marron':
+        echo 'calidad del aire peligrosa';
+        break;
+        default:
+        echo 'el color no es valido';
+        break;
+}
 ?>
