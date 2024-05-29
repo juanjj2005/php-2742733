@@ -1,40 +1,55 @@
-<?php
+<?php session_start();
 
-// session_start(); //inicializa una session
+    if ($_SERVER["REQUEST_METHOD"] == 'POST') {
 
-// $_SESSION ['Nombre'] = "joselina";
-// $_SESSION ['pais'] = "colombia";
+        $usuario = $_POST['user'];
+        $password = $_POST['password'];
 
+        $user_register = isset($_SESSION ['userRegister']) ? $_SESSION['userRegister'] : null;
+        $pass_register = isset($_SESSION ['passRegister']) ? $_SESSION['passRegister'] : null;
 
+        //verificacion de los datos vacion / llenos
+        if (empty($usuario) or empty($password)) {
+            echo 'Rellene completo el formulario';
+        } else {
+        echo $usuario .' - ' . $password;
+        if ($usuario == $user_register['userRegister'] && $password == $pass_register['passRegister']) {
+
+            echo ' - Listo, sesión iniciada 🤫';
+            header ('location: user.php');
+
+        }
+    }
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=º, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>pagina de inicio</h1>
+    
+    <h1>Página de inicio</h1>
 
-    <a href="./user.php">user page</a>
-    <a href="./cerrar.php">cerrar</a>
 
-    <form action="./registro.php" method="POST">
-
-    <label for="usuario">Usuario</label>
-    <input type="text" placeholder="usuario" name="usuario">
-    <br>
-    <label for="contraseña">contraseña</label>
-    <input type="text" placeholder="contraseña" name="contraseña">
-    <br>
-    <button type="submit">Resgistro</button>
-
+        <form action="index.php" method= "post">
+        <label for="user">User</label>
+        <input id="user" type="text" placeholder="User" name="user">
+        <br>
+        <br>
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Password" name="password">
+        <br>
+        <br>
+        <button type="submit">Iniciar sesión</button>
     </form>
+    <br>
 
-    <a href="./user.php">user page</a>
-    <a href="./cerrar.php">cerrar</a>
+    <a href="./registro.php">Registrate</a>
 
 </body>
+
 </html>

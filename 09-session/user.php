@@ -1,5 +1,7 @@
 <?php
-session_start();
+
+    session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -7,26 +9,25 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>user page</title>
+    <title>User page</title>
 </head>
 <body>
-
-<?php   if ($_SESSION) :     ?>
-
-
-
-<h1>BIENBENIDO    <php echo $_SESSION ['Nombre'] ?> a tu pais <?php echo $_SESSION['pais']; ?> </h1>
-<a href="./cerrar.php">cerrar</a>
-<a href="./index.php">home</a>
+    
+    <?php if(isset($_SESION['userRegister'])) : ?>
 
 
-<?php else : ?>
+    <h1>Bienvenido <?php echo $_SESSION['userRegister']; ?></h1>
+    
+    <a href="./cerrar.php">Cerar sesión</a>
+    <a href="./index.php">Home</a>
 
-    <h1>no has iniciado sesion </h1>
-    <a href="./idex.php">iniciar sesiom </a>
-<?php    endif ?>
 
+    <?php else :?>
 
+        <h1>No has iniciado sesión</h1>
+        <a href="./index.php">Iniciar sesión</a>
+
+    <?php endif ?>
 
 </body>
 </html>
