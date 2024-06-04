@@ -1,4 +1,5 @@
 <?php
+
 //SQL
 //01-SELECT Nombre,Edad FROM profesores;
 // esta funcion sirve para mostrar la edad y los nombres de los profesores
