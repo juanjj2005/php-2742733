@@ -1,0 +1,24 @@
+body{
+    background-image: url(./imagenes/cancha.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.829);
+    border: none;
+    border-radius: 2rem;
+    position: relative; 
+    top: 20rem;
+    width: 12rem !important;
+    margin-left: 30rem !important;
+}
+
+.boton a{
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./imagenes/jugador.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezados */
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Contenedor del formulario */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #0000003d;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 2px solid #307bec;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas del formulario */
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Campos de entrada del formulario */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #307bec;
+    border-radius: 4px;
+}
+
+/* Botones */
+button {
+    background-color: #0808088a;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #307bec;
+}
+
+/* Tabla */
+table {
+    width: 70%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: left;
+    background-color: #f5e1c4;
+}
+
+/* Celdas de la tabla */
+th, td {
+    padding: 12px;
+    border: 1px solid #d1a075;
+}
+
+/* Encabezados de la tabla */
+th {
+    background-color: #b3541e;
+    color: #ffffff;
+}
+
+/* Filas impares de la tabla */
+tr:nth-child(even) {
+    background-color: #e6ccb3;
+}
+
+/* Filas al pasar el ratón */
+tr:hover {
+    background-color: #d1a075;
+}
