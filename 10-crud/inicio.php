@@ -64,11 +64,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div class="todo">
         <div class="contenedor">
-            <h1>Página de inicio</h1>
+            <h1>Iniciar</h1>
             <form action="index.php" method="POST">
                 <label for="user"></label>
-                <input class="barra" type="text" placeholder="User" name="user">
-                <input class="barra" type="password" placeholder="Password" name="password">
+                <input class="barra" type="text" placeholder="Usuario" name="user">
+                <input class="barra" type="password" placeholder="Contraseña" name="password">
                 <br> <br>
                 <button type="submit" class="boton">Iniciar</button>
                 <br> <br>

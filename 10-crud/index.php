@@ -18,7 +18,6 @@
             <div class="row align-items-center">
                 <?php
                 $statement = $conexion->prepare("SELECT * FROM cursos");
-                $statement->execute();
                 $result = $statement->fetchAll();
 
 
