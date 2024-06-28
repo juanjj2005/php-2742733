@@ -38,10 +38,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
 
         /*   if ($usuario ==  $user_register && $password == $pass_register) {
-            echo 'Listo, iniciaste sesión 🥰';
+            echo 'Iniciaste sesión';
             header('Location: user.php');
         } else {
-            echo '<br>' . 'Tu usuario no existe 😭';
+            echo '<br>' . 'Usuario no existente';
         } */
     }
 }
